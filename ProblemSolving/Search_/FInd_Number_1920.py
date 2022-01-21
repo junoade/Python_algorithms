@@ -1,7 +1,7 @@
 ################################################
 #
 # 1920 번 수찾기
-# 유형 : 문자열, 숫자 배열 탐색 - O(log N) 
+# 유형 : 문자열, 숫자 배열 탐색, 이진 탐색 O(log N) 
 #
 # 요약) N개의 정수 A[1], A[2], …, A[N]이 주어져 있을 때, 이 안에 X라는 정수가 존재하는지 알아내는 프로그램을 작성하시오.
 #
@@ -27,7 +27,7 @@ def solution(A, B):
         left = 0
         right = len(A)-1
 
-        while left <= right :
+        while left <= right : # 이진 탐색 O(log N)
             mid = (left + right) // 2  # 소수점 제거
             if A[mid] == b_val:
                 print(1)
