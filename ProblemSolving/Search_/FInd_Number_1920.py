@@ -41,4 +41,4 @@ def solution(A, B):
         if not isFound:
             print(0)
         
-solution(A,B)
+solution(A,B) 
