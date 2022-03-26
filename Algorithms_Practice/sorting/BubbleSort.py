@@ -22,7 +22,8 @@ def bubble_sort(arr):
             if arr[j] >= arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
-# swap 안하면 break 하기 그렇게 빠르진 않았다.
+# swap 안하면 break 하기.
+# 그렇게 빠르진 않았다.
 def bubble_sort_better(arr):
     size = len(arr)
 

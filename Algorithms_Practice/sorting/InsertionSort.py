@@ -28,8 +28,8 @@ def insertion_sort(arr):
         arr[j] = cursorKey
 
         
-# file_path = "Algorithms_Practice\sorting\InputSample.txt"
-file_path = "Algorithms_Practice/sorting/InputSample.txt"
+file_path = "Algorithms_Practice\sorting\InputSample.txt"
+# file_path = "Algorithms_Practice/sorting/InputSample.txt"
 arr = []
 with open(file_path, 'r') as f:
     arr = f.readlines()

@@ -9,7 +9,7 @@ import time
 
 def selection_sort(arr):
     for i in range(len(arr)):
-        min_idx = i;
+        min_idx = i
         # 정렬 되지 않은 부분
         for j in range(i+1, len(arr)):
             # if there is smaller value than current min_Value
@@ -21,8 +21,8 @@ def selection_sort(arr):
     
 
 # arr = list(map(int, input().split()))
-# file_path = "Algorithms_Practice\sorting\InputSample.txt"
-file_path = "Algorithms_Practice/sorting/InputSample.txt"
+file_path = "Algorithms_Practice\sorting\InputSample.txt"
+# file_path = "Algorithms_Practice/sorting/InputSample.txt"
 arr = []
 with open(file_path, 'r') as f:
     arr = f.readlines()
