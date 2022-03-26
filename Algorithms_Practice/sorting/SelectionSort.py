@@ -5,6 +5,8 @@
     - 제자리성 Yes
     - 안전성 No
 """
+import time
+
 def selection_sort(arr):
     for i in range(len(arr)):
         min_idx = i;
@@ -19,14 +21,20 @@ def selection_sort(arr):
     
 
 # arr = list(map(int, input().split()))
-file_path = "Algorithms_Practice\sorting\InputSample.txt"
+# file_path = "Algorithms_Practice\sorting\InputSample.txt"
+file_path = "Algorithms_Practice/sorting/InputSample.txt"
 arr = []
 with open(file_path, 'r') as f:
     arr = f.readlines()
     
 a = list(map(int, arr[0].split()))
+
 print("Before Sorting...")
 
+before = time.time()
 print("After Sorting...")
 selection_sort(a)
+after = time.time()
+
 print(a)
+print("총 소요 시간 : %d" % (after-before) )
