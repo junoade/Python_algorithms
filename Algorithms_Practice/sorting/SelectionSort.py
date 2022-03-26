@@ -23,6 +23,7 @@ file_path = "Algorithms_Practice\sorting\InputSample.txt"
 arr = []
 with open(file_path, 'r') as f:
     arr = f.readlines()
+    
 a = list(map(int, arr[0].split()))
 print("Before Sorting...")
 
